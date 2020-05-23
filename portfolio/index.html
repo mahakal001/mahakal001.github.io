@@ -1,0 +1,659 @@
+<!--
+Author: Bharadwaja Gummadi
+Author URL: https://github.com/bharadhwaj-g
+Note : It has been developed on top of W3layout template - http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Mohit Pilkhan | Home :: Portfolio</title>
+  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Custom Theme files -->
+  <link href="css/style.css" rel='stylesheet' type='text/css' />
+  <!-- Custom Theme files -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Mohit Pilkhan Resume" />
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <!-- End -->
+  <!-- webfonts -->
+  <link href='//fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <!-- webfonts -->
+  <!---- start-smoth-scrolling---->
+  <script type="text/javascript" src="js/move-top.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $(".scroll").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({
+          scrollTop: $(this.hash).offset().top
+        }, 1000);
+      });
+    });
+  </script>
+  <!---- start-smoth-scrolling---->
+</head>
+
+<body>
+  <!-- container -->
+  <!-- header -->
+  <div id="home" class="header">
+    <div class="container">
+      <!-- top-hedader -->
+      <div class="top-header">
+        <!-- /logo -->
+        <!--top-nav---->
+        <div class="top-nav">
+          <div class="navigation">
+            <div class="logo">
+              <h1><a href="index.html"><span>I</span> AM</a></h1>
+            </div>
+            <div class="navigation-right">
+              <span class="menu"><img src="images/menu.png" alt=" " /></span>
+              <nav class="link-effect-3" id="link-effect-3">
+                <ul class="nav1 nav nav-wil">
+                  <li class="active"><a data-hover="Home" href="index.html">Home</a></li>
+                  <li><a class="scroll" data-hover="About" href="#about">About</a></li>
+                  <li><a class="scroll" data-hover="Skills" href="#services">Skills</a></li>
+                  <li><a class="scroll" data-hover="Experience" href="#work">Experience</a></li>
+                  <li><a class="scroll" data-hover="Projects" href="#blogs">Projects</a></li>
+                  <li><a class="scroll" data-hover="Contact" href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+              <!-- script-for-menu -->
+              <script>
+                $("span.menu").click(function () {
+                  $("ul.nav1").slideToggle(300, function () {
+                    // Animation complete.
+                  });
+                });
+              </script>
+              <!-- /script-for-menu -->
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <!-- /top-hedader -->
+        </div>
+        <div class="banner-info">
+          <div class="col-md-7 header-right">
+            <h1> Mohit Pilkhan </h1>
+            <h6> Machine Learning Engineer </h6>
+            <div class="hero__links">
+              <ul class="hero__social">
+                <li>
+                  <a href="https://github.com/mahakal001" rel="noopener" target="_blank" title="Github">
+                    <svg version="1.1" width="1792" height="1792" viewBox="0 0 1792 1792"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/mohit-pilkhan/" rel="noopener" title='LinkedIn' target="_blank">
+                    <svg version="1.1" width="1792" height="1792" viewBox="0 0 1792 1792"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/_mahakal001" rel="noopener" target="_blank" title="Twitter">
+                    <svg version="1.1" width="1792" height="1792" viewBox="0 0 1792 1792"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://medium.com/@mahakal001" rel="noopener" target="_blank" title="Medium">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"/></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="address">
+
+              <li>
+                <ul class="address-text">
+                  <li><b>NAME</b></li>
+                  <li>Mohit Pilkhan</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="address-text">
+                  <li><b>D.O.B</b></li>
+                  <li>17-Feb-1997</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="address-text">
+                  <li><b>ADDRESS </b></li>
+                  <li>Mumbai, India.</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="address-text">
+                  <li><b>E-MAIL </b></li>
+                  <li><a href="mailto:mohit.pilkhan.77@gmail.com"> mohit.pilkhan.77@gmail.com</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="address-text">
+                  <li><b>WEBSITE </b></li>
+                  <li><a href="https://github.com/mahakal001">Mohit Pilkhan</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+          <div class="col-md-5 header-left">
+            <img src="images/profile.jpg" alt="">
+          </div>
+          <div class="clearfix"> </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about -->
+  <div id="about" class="about">
+    <div class="col-md-6 about-left">
+      <div id="owl-demo1" class="owl-carousel owl-carousel2">
+        <div class="item">
+          <div class="about-left-grid">
+            <h2>As a <span> Machine Learning Engineer </span></h2>
+            <p><strong>Since September 2019,</strong> I have been working with Machine Learning Team at <a
+                href="https://www.fynd.com/" target="_blank"></a> Fynd as a Machine Learning Engineer, where I have been
+              repeatedly recognized
+              for developing innovative solutions for great software applications based on Deep Neural Networks and
+              solving a wide range of problems.
+              <p>Here, I am responsible for <strong>full lifecycle development</strong> of next-generation software,
+                from initial
+                data collection and analysis to designing Deep Neural Networks and deployment on Mobile. </p>
+              <ul>
+                <li><a class="a-btn-a scroll" href="#port">My Work</a></li>
+                <li><a class="a-btn-h scroll" href="#contact">Hire Me</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="item">
+          <div class="about-left-grid">
+            <h2>My <span>Education</span></h2>
+            <P>
+              <p><a href="http://mait.ac.in/" target="_blank"> Maharaja Agrasen Institute of Technology, </a> Delhi
+                <br> B.Tech(CSE) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 2015 - 2019
+                <br> CGPA: 8.3 / 10.0
+              </p>
+              <ul>
+                <li><a class="a-btn-a scroll" href="#port">My Work</a></li>
+                <li><a class="a-btn-h scroll" href="#contact">Hire Me</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 about-right">
+
+    </div>
+    <div class="clearfix"> </div>
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <script src="js/owl.carousel.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#owl-demo1").owlCarousel({
+          items: 1,
+          lazyLoad: false,
+          autoPlay: true,
+          navigation: false,
+          navigationText: false,
+          pagination: true,
+        });
+      });
+    </script>
+    <!-- Feedback -->
+    <script>
+      $(document).ready(function () {
+        $("#owl-demo3").owlCarousel({
+          items: 1,
+          lazyLoad: false,
+          autoPlay: true,
+          navigation: false,
+          navigationText: true,
+          pagination: true,
+        });
+      });
+    </script>
+  </div>
+  <!-- /about -->
+  <!-- services -->
+  <div id="services" class="services">
+    <div class="container">
+      <div class="service-head one text-center ">
+        <h4>WHAT I DO</h4>
+        <h3>MY <span>SKILLS</span></h3>
+        <span class="border two"></span>
+      </div>
+      <!-- services-grids -->
+      <div class="wthree_about_right_grids w3l-agile">
+        <div class="col-md-6 wthree_about_right_grid">
+          <div class="col-xs-2 wthree_about_right_grid_left">
+            <div class="hvr-rectangle-in">
+              <i class="glyphicon glyphicon-th-large"></i>
+            </div>
+          </div>
+          <div class="col-xs-10 wthree_about_right_grid_right">
+            <h4>Artificial Intelligence</h4>
+          </div>
+          <div class="clearfix"> </div>
+          <div class="col-md-12 skill-group-div">
+            <!-- Skill Bars -->
+            <div class="col-md-6 left-div">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill">Deep Learning <i class="val"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 right-div">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill"> Computer Vision <i class="val"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 left-div">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill">Reinforcement Learning <i class="val"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 left-div">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill"> On-Device ML <i class="val"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-6 wthree_about_right_grid">
+          <div class="col-xs-2 wthree_about_right_grid_left">
+            <div class="hvr-rectangle-in">
+              <i class="glyphicon glyphicon-leaf"></i>
+            </div>
+          </div>
+          <div class="col-xs-10 wthree_about_right_grid_right">
+            <h4> Frameworks </h4>
+          </div>
+          <div class="clearfix"> </div>
+          <div class="col-md-12 skill-group-div">
+            <!-- Skill Bars -->
+            <div class="progress skill-bar ">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100">
+                <span class="skill">PyTOrch<i class="val"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill">Tensorflow <i class="val"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill"> OpenAI-Gym <i class="val"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="skill"> Android-Studio <i class="val"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"></div>
+        <span class="border two"></span>
+        <hr>
+        </hr>
+        <div class="col-md-6 wthree_about_right_grid">
+          <div class="col-xs-10 wthree_about_right_grid_right">
+            <h4>Core Computer Science Skills</h4>
+            <ul class="news">
+              <li>Algorithm and Data Structures</li>
+              <li>Computer Networks</li>
+              <li>Operating Systems</li>
+              <li>Compiler Design</li>
+              <li>Theory Of Computation</li>
+              <li>Database Management</li>
+            </ul>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-6 wthree_about_right_grid">
+          <div class="col-xs-10 wthree_about_right_grid_right">
+            <h4>Programming Languages</h4>
+            <ul class="news">
+              <li>C++</li>
+              <li>Python</li>
+              <li>Kotlin</li>
+              <li>C</li>
+              <li>Bash</li>
+              <li>64bit-Assembly</li>
+            </ul>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-6 wthree_about_right_grid">
+          <div class="col-xs-10 wthree_about_right_grid_right">
+            <h4>Tools & Ids</h4>
+            <ul class="news">
+              <li>Linux</li>
+              <li>VSCode</li>
+              <li>Vim</li>
+              <li>PyCharm</li>
+              <li>IntelliJ IDEA</li>
+            </ul>
+            <ul class="news">
+              <li>Git</li>
+              <li>Wireshark</li>
+              <li>Gimp</li>
+            </ul>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="work" class="work">
+    <div class="container">
+      <div class="service-head text-center">
+        <h4>WHAT I DID</h4>
+        <h3>MY <span>EXPERIENCE</span></h3>
+        <span class="border one"></span>
+      </div>
+      <div class="time-main w3l-agile">
+        <div class="col-md-6 year-info">
+          <ul class="year">
+            <li>September 2019 <i class="glyphicon glyphicon-arrow-right"></i> <span id="tillDate"></span></li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="col-md-6 timeline">
+          <li>
+            <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title"><a href="https://www.linkedin.com/company/fynd-shopsense"
+                    target="_blank">Fynd (Shopsense Retail Technologies Pvt. Ltd.), <i>Mumbai, India</i></a></h4>
+              </div>
+              <div class="timeline-body">
+                <p>Fynd is India’s largest offline to online (O2O) co works with retailers to enable their store
+                  inventory to be shoppable across
+                  different online and offline channels beyond the store. Online customers can buy these products on the
+                  Fynd Apps, Fynd.com,
+                  the brand’s own website, prominent market places like Amazon, Myntra, TataCliq and Google.</p>
+                <p><strong>Great! place to learn.</strong></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <div class="blog" id="blogs">
+    <div class="container">
+      <div class="service-head text-center">
+        <h4>PROJECTS</h4>
+        <h3>MY <span>Projects</span></h3>
+        <span class="border one"></span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="news-grid w3l-agile">
+      <div class="col-md-6 news-text">
+        <h3> Facial Keypoint Detection | Fynd </h3>
+        <ul class="news">
+          <li>Python</li>
+          <li>Tensorflow</li>
+          <li>Keras</li>
+          <li>OpenCV</li>
+          <li>TFRecord</li>
+          <li>Android</li>
+          <li>Bash</li>
+        </ul>
+        <p>Completed six-week independent solo project to detect facial keypoint. This involved data collection and preparation,
+           designing a deep neural network and finally deployment on Android. Bash was used for data preparation.
+            The data was converted to TFRecord format for efficient use of tf data pipelines. </p>
+        </div>
+          <div class="col-md-6 news-text">
+            <h3> GlamAR | Fynd </h3>
+            <ul class="news">
+              <li> C++ </li>
+              <li>Android</li>
+              <li>NDK</li>
+              <li>Concurrency</li>
+            </ul>
+            <p> Worked as a member of cross-functional four-person team for GlamAR which offer users the ability to try virtual makeup. I was
+                responsible for writting the computer vision algorithms in c++.
+             </p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="news-grid w3l-agile">
+          <div class="col-md-6 news-text">
+            <h3> Real Time Segmentation | Fynd </a></h3>
+            <ul class="news">
+              <li>PyTorch</li>
+              <li>Tensorflow</li>
+              <li>Keras</li>
+              <li>Android</li>
+              <li>Bash</li>
+            </ul>
+            <p> Completed three-week independent solo project to acheive a decent FPS for segmentation tasks on Mobile Devices.
+              This involved data preparation, implementing DNNs described in relevant research papers with some modificiation and 
+              deployment on Android. Achieved 10+ FPS on low end devices and 20+ FPS on high end devices.
+            </p>
+          </div>
+        <div class="col-md-6 news-text">
+          <h3> Multiple Camera Tracking | Fynd </h3>
+          <ul class="news">
+            <li>OpenCV</li>
+            <li>Python</li>
+          </ul>
+          <p> Successfully completed a POC on tracking multiple objects with the help of two cameras </p>
+          <!-- <a href="#" data-toggle="modal" data-target="#baseDriveMdl" class="read hvr-shutter-in-horizontal">Read More</a> -->
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="news-grid w3l-agile">
+        <div class="col-md-6 news-text">
+          <h3> <a href="https://github.com/mahakal001/maze-runner" target="_blank"> maze-runner | Personal Project </a></h3>
+          <ul class="news">
+            <li>C++</li>
+            <li>SFML Graphic Library</li>
+            <li>Tiled - Map Editor for 2D games </li>
+          </ul>
+          <p>
+            I worked on this project during my undergrad to explore the fundamentals of AI. This is directly inspired
+            from Pac Man. The project is written using C++. The source code is availabe at  <a href="https://github.com/mahakal001/maze-runner" target="_blank"> github </a>. 
+            <img src="images/A_inaction.gif" alt="Pacman Game" width="600" height="400"> 
+          </p>
+          <!-- <a href="#" data-toggle="modal" data-target="#counterPickMdl" class="read hvr-shutter-in-horizontal">Read More</a> -->
+        </div>
+        <div class="col-md-6 news-text">
+          <h3> <a href="#" data-toggle="modal" data-target="#rivengMdl"> Eagle - IRC-Client | Personal Project </a></h3>
+          <ul class="news">
+            <li>C</li>
+            <li>Computer Networking</li>
+            <li>SQLite</li>
+            <li>Bash</li>
+          </ul>
+          <p>
+            During my undergrad, Internet Relay Chat was a main platform for discussion on various topics. The protocol
+            is such that it disconnects
+            you automatically if you remain inactive for a certain period of time. Thats when I decided to write a basic IRC
+            client for me.
+            I have Followed the IRC protocol descrbed in RFC-1459. The source code is available at <a href="https://github.com/mahakal001/eagle" target="_blank"> github.</a>
+          </p>
+          <!-- <a href="#" data-toggle="modal" data-target="#rivengMdl" class="read hvr-shutter-in-horizontal">Read More</a> -->
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  </div>
+
+  <!-- /header -->
+  <div class="footer" id="contact">
+    <div class="container">
+      <div class="service-head one text-center">
+        <h4>CONTACT ME</h4>
+        <h3>GET <span>IN TOUCH WITH ME</span></h3>
+        <span class="border two"></span>
+      </div>
+      <div class="mail_us">
+        <div class="col-md-12 mail_left">
+          <div class="contact-grid1-left">
+            <div class="contact-grid1-left1">
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+              <h4>Contact By Email</h4>
+              <ul>
+                <li><a href="mailto:mohit.pilkhan.77@gmail.com">mohit.pilkhan.77@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact-grid1-left">
+            <div class="contact-grid1-left1">
+              <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+              <h4>Contact By Mobile</h4>
+              <ul>
+                <li>Mobile: +91 9467042947</li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact-grid1-left">
+            <div class="contact-grid1-left1">
+              <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+              <h4>Looking For Address</h4>
+              <ul>
+                <li>Mumbai, India</li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="copy_right text-center">
+        <p class="float-left">&copy; 2020 Profile of Mohit Pilkhan</p>
+        <p class="float-right">Design on top of <a href="http://w3layouts.com/" target="_blank">W3layouts.</a></p>
+        <ul class="hero__social">
+          <li>
+            <a href="https://github.com/mahakal001" rel="noopener" target="_blank" title="GitHub">
+              <svg version="1.1" width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z">
+                </path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/mohit-pilkhan/" rel="noopener" target="_blank"
+              title='LinkedIn'>
+              <svg version="1.1" width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z">
+                </path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/_mahakal001" rel="noopener" target="_blank" title="Twitter">
+              <svg version="1.1" width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z">
+                </path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/@mahakal001" rel="noopener" target="_blank" title="Medium">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- //footer -->
+  <!-- /container -->
+  <a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+  <!--start-smooth-scrolling-->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      /*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+      $('.progress .progress-bar').css("width",
+        function () {
+          return $(this).attr("aria-valuenow") + "%";
+        }
+      );
+      $().UItoTop({
+        easingType: 'easeOutQuart'
+      });
+
+    });
+  </script>
+  <!--end-smooth-scrolling-->
+  <!-- //for bootstrap working -->
+  <script src="js/bootstrap.js"></script>
+
+
+</body>
+
+</html>

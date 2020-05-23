@@ -2376,6 +2376,7 @@ svg:not(:root) {
   line-height: 35px;
   padding: 0;
   margin: 0 0 0 20px;
+  color: #212121;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -2383,6 +2384,7 @@ svg:not(:root) {
 .progress .skill .val {
   float: right;
   font-style: normal;
+
   margin: 0 20px 0 0;
 }
 

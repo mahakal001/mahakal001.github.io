@@ -2422,3 +2422,7 @@ svg:not(:root) {
     padding-right: 15px;
   }
 }
+
+.image_x{
+  max-width: 100%;
+}
